@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+   
+}
+
+body{
+    height: 100vh;
+   
+    background: linear-gradient(to right, #243B55, #141e30);
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#card{
+
+    border: 2px solid aqua;
+    border-radius: 2%;
+    place-self: center;
+    width: 800px;
+    
+    padding: 30px;
+
+}
+
+#card img {
+    margin: 50px;
+    opacity: 0.7;
+    border-radius: 2%;
+}
+
+#card h2{
+
+    color: rgb(126, 212, 212);
+    font-size: 5rem;
+    
+
+}
+
+#card p
+    {margin-top: 5px;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+
+#card a{
+    margin: 40px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.7;
+}
+
+#card a:hover{
+    text-underline-position: auto;
+    color: aqua;
+    opacity: 1;
+}
+
+#card div{
+    margin: 20px;
+}
+
+#card div a{
+    margin: 12px;
+    margin-bottom: 40px;
+    border: 2px solid aqua;
+    border-radius: 2%;
+    padding: 9px;
+}
+
+@media (max-width:1200px){
+
+
+    #card{
+
+        width: 320px;
+    
+    }
+
+    #card img {
+        margin: 10px;
+        opacity: 0.7;
+        border-radius: 2%;
+        width: 225px;
+        height: auto;
+    }
+
+    #card div a{
+        font-size: 19px;
+    }
+
+    #card p{
+        font-size: 1.2rem;;
+    }
+
+    #card h2{
+
+        font-size: 3rem;
+        
+    
+    }
+
+    body{
+        height: 100%;
+    }
+
+}
