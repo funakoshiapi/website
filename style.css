@@ -126,6 +126,16 @@ header a.resume{
 /*  */
 
 
+#scroll{
+    place-self: center;
+    margin-top: 172px;
+}
+
+#scroll a img{
+    width: 100px;
+}
+
+
 @media(max-width: 1200px){
     header {
         padding: 20px 50px;
@@ -146,6 +156,10 @@ header a.resume{
         padding: 2px 10px;
         font-size: 11px;
 
+    }
+
+    #scroll{
+        display: none;
     }
 }
 
