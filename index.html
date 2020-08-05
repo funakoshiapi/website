@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
         <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -71,7 +71,7 @@
                         </p>
                         <br>
                         <p>
-                            I am a recent graduate from  <a id="university" href="https://ece.msu.edu/" target="_blank">Michigan State University.<span id="spartano"><img src="/img/spartan.gif" alt="" srcset=""></span></a> My primary goal is to follow my passion in software development while teaming up with inovators to come up with products that put a significant impact towards the future of technology. 
+                            I am a recent graduate from  <a id="university" href="https://ece.msu.edu/" target="_blank">Michigan State University.<span id="spartano"><img src="img/spartan.gif" alt="" srcset=""></span></a> My primary goal is to follow my passion in software development while teaming up with inovators to come up with products that put a significant impact towards the future of technology. 
                            
                         </p>
                         <br>
@@ -159,24 +159,38 @@
             <section id="contact">
 
                 <h1>Contact</h1>
-                <form class="contact__form" action="">
+
+
+                <form id = 'contact' class="contact__form" action="https://formspree.io/xoqkrrdk" method="POST" 
+                target="_blank">
+                    
+                    <div class="hpot">
+                        <label>Leave this field empty: <input name="_gotcha"></label>
+                    </div>
+
                     <label>Name</label>
-                    <input name="name" placeholder="Type Here">
-
+                    <input type= "text" name="name" placeholder="Type Here" id="fname" required type="text">
                     <label>Email</label>
-                    <input type="email" type ="email" placeholder="Type Here">
-
+                    <input type="email" name="_replyto" placeholder="Type Here" id="femail" required type="text">
                     <label>Message</label>
-                    <textarea name="message"></textarea>
-
-                    <input class="submitButtom" name="submit" id="submit" type="submit" value="submit"></input>
+                    <textarea name="message" id="fmessage"></textarea>
+                    <input class="submitButtom" name="submit" id="submit" type="submit" value="submit" required type="text"></input>	
+                    <input type="hidden" name="_subject" value="Website contact" />
+                    <input type="hidden" name="_next" value="//funakoshisilva.com/#" />
+                    
                 </form>
+
+                
+                <script>
+                    var contactform =  document.getElementById('contact');
+                    contactform.setAttribute('action', 'https://formspree.io/' + 'xoq' + 'k' + 'rr' + 'dk');
+                </script>
 
             </section>
 
-            <script src="/typewriter.js"></script>
-            <script src="/tilt.js"></script>
-            <script src="/cards.js"></script>
+            <script src="typewriter.js"></script>
+            <script src="tilt.js"></script>
+            <script src="cards.js"></script>
 </body>
 
 <footer>
@@ -185,6 +199,3 @@
 </footer>
 
 </html>
-
-
-

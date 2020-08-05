@@ -677,6 +677,10 @@ textarea {
     color: aqua;
 }
 
+.hpot {
+  display: none;
+}
+
 @media (max-width:1200px){
 
     input {
