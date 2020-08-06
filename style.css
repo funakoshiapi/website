@@ -7,21 +7,23 @@ GENERAL STYLE */
 }
 
 body{
-   
+    height: 100%;
     background: #141e30;  /* fallback for old browsers */
     background: linear-gradient(to right, #243B55, #141e30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-     /* CSS Smooth Scroll */
+    scroll-padding-top: 70px; /* height of sticky header */
      
     
 }
 html{
+    height: 100vh;
     font-size: 22px;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     color: rgb(255, 255, 255);
     font-family: 'Karla', sans-serif;
+    scroll-padding-top: 70px; /* height of sticky header */
+    background: linear-gradient(to right, #243B55, #141e30); 
 }
 ul, nav{
     list-style: none;
@@ -94,6 +96,7 @@ header {
     background-color: #01000285;
     font-family: 'Dosis', sans-serif;
     position: fixed;
+    background: linear-gradient(to right, #172636, #141e30); 
 
 }
 header h2{
@@ -128,7 +131,8 @@ header a.resume{
 
 #scroll{
     place-self: center;
-    margin-top: 172px;
+    position: absolute;
+    bottom: 0;
 }
 
 #scroll a img{
@@ -173,8 +177,9 @@ header a.resume{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    padding: 125px 100px;
-    min-height: 100vh;
+    padding: 0px 100px;
+    height: 100vh;
+
 }
 
 @media (max-width: 1200px){
