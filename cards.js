@@ -59,7 +59,7 @@ function swap(swapEvent) {
   //covid
   else if (value === '4'){
     oldParag = document.getElementById("paragraph");
-    oldParag.innerHTML = "Uses API's to render information about covid-19 cases in diferent countries. Itagrates graphical plots of the renderd data, helping to make sence of the information";
+    oldParag.innerHTML = "Uses API's to render information about covid-19 cases in diferent countries. Itagrates graphical plots of the rendered data, helping to make sence of the information";
 
     document.getElementById("proj--link").href="#";
 
