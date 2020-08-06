@@ -18,13 +18,14 @@ html{
     height: 100vh;
     font-size: 22px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     color: rgb(255, 255, 255);
     font-family: 'Karla', sans-serif;
     scroll-padding-top: 70px; /* height of sticky header */
     background: linear-gradient(to right, #243B55, #141e30); 
+
 }
+
 ul, nav{
     list-style: none;
 }
@@ -179,6 +180,8 @@ header a.resume{
 	align-items: center;
     padding: 0px 100px;
     height: 100vh;
+    
+   
 
 }
 
