@@ -7,21 +7,17 @@ GENERAL STYLE */
 }
 
 body{
-    height: 100%;
     background: #141e30;  /* fallback for old browsers */
     background: linear-gradient(to right, #243B55, #141e30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    scroll-padding-top: 70px; /* height of sticky header */
      
     
 }
 html{
-    height: 100vh;
     font-size: 22px;
     scroll-behavior: smooth;
     overflow-y: scroll;
     color: rgb(255, 255, 255);
     font-family: 'Karla', sans-serif;
-    scroll-padding-top: 70px; /* height of sticky header */
     background: linear-gradient(to right, #243B55, #141e30); 
 
 }
@@ -142,6 +138,7 @@ header a.resume{
 
 
 @media(max-width: 1200px){
+ 
     header {
         padding: 20px 50px;
         width: 100%;
@@ -225,7 +222,7 @@ header a.resume{
     padding: 20px 46px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1200px){
     #hero {
         min-height: 600px;
         padding: 151px 30px;
