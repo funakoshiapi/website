@@ -119,7 +119,7 @@ function swap(swapEvent) {
   }
   else{
     oldParag = document.getElementById("paragraph");
-    oldParag.innerHTML = "Designed graphical user interface, and programmed logic of winch to adjust the release of cabled sensor underwater based on desired depth. Wrote unit test to prevent system short circuit, that could be caused by realys connected to winch by microcontroller and portable power source.";
+    oldParag.innerHTML = "Designed graphical user interface, and programmed logic of winch to adjust the release of cabled sensor underwater based on desired depth. Wrote unit test to prevent system short circuit, that could be caused by relays connected to winch by microcontroller and portable power source.";
 
     document.getElementById("proj--link").href="https://github.com/funakoshiapi/automated-winch";
 
