@@ -27,6 +27,8 @@ html{
 ul, nav{
     list-style: none;
 }
+
+
 a{
 	text-decoration: none;
 	color: inherit;
@@ -46,9 +48,184 @@ a.btn{
     font-weight: 800;
     text-align: center;
 }
-/* ---------------------------------- */
+/* ---rightSIDE CONTAINERS----------- */
+
+.right__side-container {
+    width: 5%;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+    background: #00800000;
+    height: 50%;
+    
+}
+
+
+.configdiv {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.configdiv::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    overflow: hidden;
+    animation: bounceIn 4s;
+}
+
+.email {
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.contEmail {
+
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: 20px auto;
+    padding: 10px;
+    color: rgb(204, 204, 204);
+    opacity: 0.7;
+}
+
+
+.contEmail:hover {
+  
+    transform: scale(1.1);
+    color: rgb(126, 212, 212);
+    opacity: 1;
+    
+}
+
+.emailLink a {
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    
+}
+
+
+/* left side container */
+
+/* SIDE CONTAINERS */
+.left__side-container{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+    background: #00800000;
+    height: 50%;
+    width: 40px;
+    left: 40px;
+    right: auto;
+  
+    
+}
+
+.my--media{
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+}
+
+
+
+.my--media::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    animation: bounceIn 4s;
+}
+.my--media li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+.fa {
+    padding: 15px;
+    font-size: 50px;
+    /* width: 100px; */
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .fa:hover {
+    transform: scale(1.2);
+    color: rgb(126, 212, 212);
+    opacity: 1;
+
+}
+
+
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+.delay1{
+    animation: bounceIn 2s;
+  }
+  .delay2 {
+    animation: bounceIn 4s;
+    
+  }
+  .delay3 {
+    animation: bounceIn 6s;
+    
+  }
+  .delay4 {
+    animation: bounceIn 8s;
+   
+  }
+
 
 /*Header*/
+
 
 #university{
     color: rgba(9, 199, 110, 0.801) ;
@@ -140,6 +317,13 @@ header a.resume{
 
 
 @media(max-width: 1200px){
+
+    .left__side-container{
+        display: none;
+    }
+    .right__side-container {
+        display: none;
+    }
     header {
         padding: 20px 50px;
         width: 100%;
@@ -176,7 +360,7 @@ header a.resume{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    padding: 125px 100px;
+    padding: 125px 213px;
     min-height: 100vh;
 }
 
@@ -278,6 +462,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 
+.media-phone{
+    display: none;
+}
  
 #me--picture {
 
@@ -402,6 +589,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   @media (max-width: 1200px){
+
+    .media-phone{
+        display: flex;
+        justify-content: center;
+
+    }
       
  #me--picture{
         height: 13rem;
@@ -589,22 +782,7 @@ h1, h2, h3, h4, h5, h6 {
  }
  
 
- .fa {
-    padding: 15px;
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    text-decoration: none;
-    opacity: 0.7;
-  }
 
-  .fa:hover {
-    transform: scale(1.2);
-    color: rgb(126, 212, 212);
-    opacity: 1;
-
-}
 
 .fa-github {
     color: rgb(204, 204, 204);
