@@ -667,6 +667,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 5px 10px 0 #000000a8, 0 5px 20px 0 #1d1c1c;
     transition: trasnform 200ms;
     text-align: center; 
+    z-index:100;
   }
 
   .card:hover{
