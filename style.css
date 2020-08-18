@@ -333,7 +333,7 @@ header a.resume{
     header{
         text-size-adjust: auto;
         flex-direction: column;
-        font-size: 15px;
+        font-size: 52%;
         width: 100%;
     }
     header h2{
